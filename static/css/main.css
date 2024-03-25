@@ -52,6 +52,14 @@ h1,h2,h3,h4,h5,h6{
 
 .btn{
 	border-radius: 0;
+	border-color: #aa2c2f;
+	color: #000;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #aa2c2f;
+	border-color: #aa2c2f;
 }
 
 .row-image{
@@ -310,4 +318,8 @@ margin-bottom: 5px;
 	color: #fff;
 	font-weight: bold;
 	text-decoration: underline;
+}
+
+a.nav-link {
+    color: white;
 }
