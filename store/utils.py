@@ -3,7 +3,7 @@ from .models import *
 
 def cookieCart(request):
 
-	#Create empty cart for now for non-logged in user
+	#Create empty cart
 	try:
 		cart = json.loads(request.COOKIES['cart'])
 	except:
@@ -15,9 +15,9 @@ def cookieCart(request):
 	cartItems = order['get_cart_items']
 
 	for i in cart:
-		#We use try block to prevent items in cart that may have been removed from causing error
+		#We use try block to prevent items in cart that may
 		try:	
-			if(cart[i]['quantity']>0): #items with negative quantity = lot of freebies  
+			if(cart[i]['quantity']>0):
 				cartItems += cart[i]['quantity']
 
 				product = Product.objects.get(id=i)
