@@ -1,0 +1,60 @@
+
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+<style>
+	.navbar {
+		background-color: #FD8311;
+	}
+</style>
+
+{% if alert %}
+<div class="alert alert-danger" role="alert">
+	{{ message }}
+</div>
+{% endif %}
+
+<form class="register-container mt-4" method="POST">
+	{% csrf_token %}
+
+	<div class="row">
+		<div class="form-group col-md-12">
+			<label class="form-label">Full Name</label>
+			<input type="text" class="form-control" name="full_name" id="full_name" placeholder="Enter Full Name"
+				required>
+		</div>
+	</div>
+
+	<div class="row mt-4">
+		<div class="form-group col-md-6">
+			<label class="form-label">Email Id</label>
+			<input type="email" class="form-control" name="email" id="email" placeholder="Enter Email Id" required>
+		</div>
+		
+	</div>
+
+	<div class="row mt-4">
+		<div class="form-group col-md-12">
+			<label class="form-label">Username</label>
+			<input type="text" class="form-control" name="username" id="username" placeholder="Enter Username" required>
+		</div>
+	</div>
+
+	<div class="row mt-4">
+		<div class="form-group col-md-6">
+			<label class="form-label">Password</label>
+			<input type="password" class="form-control" name="password1" id="password1" placeholder="Enter Password"
+				required>
+		</div>
+		<div class="form-group col-md-6">
+			<label class="form-label">Confirm Password</label>
+			<input type="password" class="form-control" name="password2" id="password2" placeholder="Confirm Password"
+				required>
+		</div>
+	</div>
+
+	<input type="submit" value="Submit" class="register-btn">
+</form>
+{% endblock content %}
