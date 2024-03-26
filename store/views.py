@@ -225,3 +225,9 @@ def processOrder(request):
 		)
 
 	return JsonResponse('Payment submitted..', safe=False)
+
+def about(request):
+    return render(request, 'store/about.html')
+
+def contact(request):
+    return render(request, 'store/contact.html')
