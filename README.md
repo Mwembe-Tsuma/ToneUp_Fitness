@@ -1,5 +1,5 @@
 # ToneUp Fitness
-![Alt text](https://github.com/Mwembe-Tsuma/ToneUp_Fitness/blob/main/static/images/Django.svg)
+![Alt text](https://github.com/Mwembe-Tsuma/ToneUp_Fitness/blob/main/static/images/Django.svg) ![Alt text](https://github.com/Mwembe-Tsuma/ToneUp_Fitness/blob/main/static/images/Python.svg) ![Alt text](https://github.com/Mwembe-Tsuma/ToneUp_Fitness/blob/main/static/images/Bootstrap.svg) ![Alt text](https://github.com/Mwembe-Tsuma/ToneUp_Fitness/blob/main/static/images/HTML.svg) ![Alt text](https://github.com/Mwembe-Tsuma/ToneUp_Fitness/blob/main/static/images/CSS.svg) ![Alt text](https://github.com/Mwembe-Tsuma/ToneUp_Fitness/blob/main/static/images/github.svg) 
 
 
 ## Project Description:
