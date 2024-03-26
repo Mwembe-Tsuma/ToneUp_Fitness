@@ -1,4 +1,5 @@
 # ToneUp Fitness
+![Alt text](image link)
 
 
 ## Project Description:
