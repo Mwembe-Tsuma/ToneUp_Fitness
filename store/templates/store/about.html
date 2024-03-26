@@ -1,0 +1,69 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/tiny-slider.css.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+
+<!-- Start Why Choose Us Section -->
+<div class="why-choose-section">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p>We provide top-quality gym equipment to help you achieve your fitness goals effectively. Our wide range of products ensures that you have everything you need for a complete workout experience. With a commitment to quality and customer satisfaction, 
+                ToneUp Fitness is your ultimate destination for premium fitness equipment.</p>
+
+                <div class="row my-5">
+                    <div class="col-6 col-md-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'images/truck.svg' %}" alt="Image" class="imf-fluid">
+                            </div>
+                            <h4>Fast &amp; Free Shipping</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'images/bag.svg' %}" alt="Image" class="imf-fluid">
+                            </div>
+                            <h4>Easy to Shop</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'images/support.svg' %}" alt="Image" class="imf-fluid">
+                            </div>
+                            <h4>24/7 Support</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'images/return.svg' %}" alt="Image" class="imf-fluid">
+                            </div>
+                            <h4>Hassle Free Returns</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="img-wrap">
+                    <img src="{% static 'images/dumbells.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End Why Choose Us Section -->
+{% endblock content %}

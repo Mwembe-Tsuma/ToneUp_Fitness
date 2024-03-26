@@ -1,6 +1,85 @@
 {% extends 'store/main.html' %}
 {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
 {% block content %}
+<!-- Start Hero Section -->
+	<div class="hero">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-5">
+					<div class="intro-excerpt">
+						<h2>Welcome To ToneUp Fitness<span clsas="d-block"></span></h2>
+						<p class="mb-4">For Quality Gym Equipment.</p>
+						<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="/about/" class="btn btn-white-outline">Explore</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start Product Section -->
+	<div class="product-section">
+		<div class="container">
+			<div class="row">
+
+				<!-- Start Column 1 -->
+				<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+					<h6 class="mb-4 section-title">About.</h6>
+					<h2 class="mb-4 section-title">ToneUp Story</h2>
+					<p class="mb-4">ToneUp Fitness is an e-commerce website dedicated to providing high-quality gym equipment to fitness enthusiasts</p>
+					<p><a href="/about/" class="btn btn-white-outline">Read More</a></p>
+				</div> 
+				<!-- End Column 1 -->
+
+				<!-- Start Column 2 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="#">
+						<img src="{% static 'images/Rack.png' %}" class="img-fluid product-thumbnail">
+						<h3 class="product-title">Rack</h3>
+						<strong class="product-price">Ksh:20000.00</strong>
+
+						<span class="icon-cross">
+							<img src="images/cross.svg" class="img-fluid">
+						</span>
+					</a>
+				</div> 
+				<!-- End Column 2 -->
+
+				<!-- Start Column 3 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="cart.html">
+						<img src="{% static 'images/Dumbbell Rack.png' %}" class="img-fluid product-thumbnail">
+						<h3 class="product-title">Dumbbell Rack</h3>
+						<strong class="product-price">Ksh:15000.00</strong>
+
+						<span class="icon-cross">
+							<img src="{% static 'images/cross.svg' %}" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<!-- End Column 3 -->
+
+				<!-- Start Column 4 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="cart.html">
+						<img src="{% static 'images/Leg Press Machine.png' %}" class="img-fluid product-thumbnail">
+						<h3 class="product-title">Leg Press Machine</h3>
+						<strong class="product-price">Ksh:250000.00</strong>
+
+						<span class="icon-cross">
+							<img src="images/cross.svg" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<!-- End Column 4 -->
+
+			</div>
+		</div>
+	</div>
+	<!-- End Product Section -->
+
     <h2 class="text-center mb-4">Featured Products</h2>
 	<div class="row">
 		{% for product in products %}
