@@ -1,6 +1,6 @@
 # ToneUp Fitness
 
-
+![Uploading Django.svg…]()
 
 ## Project Description:
 <p> ToneUp Fitness is an e-commerce platform dedicated to providing top-quality gym equipment to fitness enthusiasts worldwide. Our platform offers a wide range of products, from dumbbells and kettlebells to treadmills and weight benches, ensuring customers have access to everything they need for their fitness journey.
